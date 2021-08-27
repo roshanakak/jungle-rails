@@ -1,3 +1,9 @@
+<% if enhanced_cart.empty? %>
+  <div class="alert alert-info" role="alert">
+    <p> oops! The cart is empty! </p>
+    <%= link_to 'peleas go to the Home page', root_path %>
+  </div>
+<% else %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -50,3 +56,4 @@
   </div>
 
 </section>
+<% end %>
